@@ -1,0 +1,84 @@
+
+.orbit-space {
+  position: relative;
+  height: 100vh;
+  background: radial-gradient(circle at top, #020024, #090979, #000);
+  overflow: hidden;
+}
+
+.sun {
+  position: absolute;
+  bottom: 5%;
+  left: 80%;
+  transform: translateX(-50%);
+}
+
+.sun img {
+  width: 180px;
+  animation: pulse 3s infinite;
+}
+
+
+.orbit {
+  position: absolute;
+}
+
+
+
+.planet {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  text-align: center;
+  animation: float 4s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.planet img {
+  width: 100%;
+  height: 100%;
+}
+
+.planet span {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  color: white;
+}
+
+.active {
+  box-shadow: 0 0 25px cyan;
+}
+
+
+.locked {
+  filter: grayscale(100%);
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 20px orange; }
+  50% { box-shadow: 0 0 40px yellow; }
+  100% { box-shadow: 0 0 20px orange; }
+}
+
+
+.orbit-0 { top: 20%; left: 10%; }  /* Mercury */
+.orbit-1 { top: 20%; left: 30%; }  /* Venus */
+.orbit-2 { top: 20%; left: 50%; }  /* Earth */
+
+.orbit-3 { top: 45%; left: 50%; }  /* Mars */
+.orbit-4 { top: 45%; left: 30%; }  /* Jupiter */
+.orbit-5 { top: 45%; left: 10%; }  /* Saturn */
+
+
+.orbit-6 { top: 70%; left: 30%; }  /* Uranus */
+.orbit-7 { top: 70%; left: 50%; }  /* Neptune */

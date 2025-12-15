@@ -1,0 +1,40 @@
+.dashboard {
+  min-height: 100vh;
+  background: transparent;
+  color: white;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.dash-card {
+  width: 220px;
+  height: 260px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 20px;
+}
+
+.dash-card:hover {
+  transform: translateY(-15px) scale(1.05);
+  box-shadow: 0 0 30px #4fc3f7;
+}
+
+.dash-card h3 {
+  margin-top: 20px;
+}
+
+.dash-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
