@@ -21,17 +21,17 @@ const Login = () => {
       });
 
       if (res.data) {
-        navigate("/dashboard"); // ✅ REDIRECT HERE
+        alert("Login successful!");
+        navigate("/dashboard");
       }
     } catch (error) {
-      alert("Invalid login credentials");
+      alert(error.response?.data?.message || "Invalid login credentials");
     }
   };
 
   return (
     <>
       <SpaceBackground />
-
       <div className="auth-container">
         <div className="auth-box">
           <div className="auth-logo">
@@ -50,7 +50,6 @@ const Login = () => {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-
             <input
               type="password"
               placeholder="Password"
@@ -59,7 +58,6 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-
             <button type="submit" className="auth-btn">
               Login
             </button>

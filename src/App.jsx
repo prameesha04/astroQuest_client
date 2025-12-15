@@ -12,8 +12,8 @@ import Signup from "./Pages/Signup";
 import QuizZone from "./Quiz/QuizZone";
 import GameZone from "./Game/GameZone";
 import InnovationZone from "./Innovation/InnovationZone";
-import AdminLogin from "./Admin/AdminLogin";
-import AdminDashboard from "./Admin/AdminDashboard";
+
+
 
 
 const App = () => {
@@ -31,34 +31,6 @@ const App = () => {
         <Route path="/quiz" element={<QuizZone />} />
         <Route path="/game" element={<GameZone />} />
         <Route path="/innovation" element={<InnovationZone />} />
-        <Route path="/admin/login" element={<AdminLogin />} />
-
-        <Route
-          path="/admin/dashboard"
-          element={
-            <AdminProtectedRoute>
-              <AdminDashboard />
-            </AdminProtectedRoute>
-          }
-        />
-
-        <Route
-          path="/admin/quizzes"
-          element={
-            <AdminProtectedRoute>
-              <AdminQuizManager />
-            </AdminProtectedRoute>
-          }
-        />
-
-        <Route
-          path="/admin/todos"
-          element={
-            <AdminProtectedRoute>
-              <AdminTodo />
-            </AdminProtectedRoute>
-          }
-        />
       </Routes>
 
       <Footer />
