@@ -12,6 +12,8 @@ import Signup from "./Pages/Signup";
 import QuizZone from "./Quiz/QuizZone";
 import BoardGame from "./Game/BoardGame";
 import InnovationHome from "./Innovation/InnovationHome";
+import AdminDashboard from "./Admin/AdminDashboard";
+
 
 const App = () => {
   return (
@@ -24,6 +26,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/quiz" element={<QuizZone />} />
         <Route path="/board-game" element={<BoardGame />} />

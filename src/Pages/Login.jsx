@@ -21,8 +21,18 @@ const Login = () => {
       });
 
       if (res.data) {
+        // ✅ store token & role
+        localStorage.setItem("token", res.data.token);
+        localStorage.setItem("role", res.data.role);
+
         alert("Login successful!");
-        navigate("/dashboard");
+
+        // ✅ role-based redirect
+        if (res.data.role === "admin") {
+          navigate("/admin/dashboard");
+        } else {
+          navigate("/dashboard"); // existing user dashboard
+        }
       }
     } catch (error) {
       alert(error.response?.data?.message || "Invalid login credentials");
