@@ -1,0 +1,132 @@
+/* 🌌 FULL PAGE */
+.innovation-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0b1020, #000000);
+  color: #e5e7eb;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🚀 HEADER */
+.innovation-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.innovation-header h1 {
+  font-size: 2.4rem;
+  color: #7dd3fc;
+  text-shadow: 0 0 20px #38bdf8;
+}
+
+.innovation-header p {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #9ca3af;
+}
+
+/* 🧠 FORM CARD */
+.innovation-form {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  background: linear-gradient(145deg, #0f172a, #020617);
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.25);
+}
+
+/* INPUTS */
+.innovation-form input,
+.innovation-form textarea {
+  width: 100%;
+  background: #020617;
+  border: 2px solid #1e293b;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 18px;
+  color: #e5e7eb;
+  font-size: 1rem;
+  outline: none;
+}
+
+.innovation-form input:focus,
+.innovation-form textarea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+}
+
+/* BUTTON */
+.innovation-form button {
+  width: 100%;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  border: none;
+  padding: 14px;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #020617;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.innovation-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px #38bdf8;
+}
+
+/* 📦 IDEAS GRID */
+.innovation-list {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* 💡 IDEA CARD */
+.idea-card {
+  background: linear-gradient(145deg, #020617, #0f172a);
+  border-radius: 18px;
+  padding: 22px;
+  border: 2px solid #1e293b;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
+.idea-card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+}
+
+/* TEXT */
+.idea-card h3 {
+  color: #7dd3fc;
+  margin-bottom: 10px;
+}
+
+.idea-card p {
+  font-size: 0.95rem;
+  color: #d1d5db;
+  line-height: 1.5;
+}
+
+/* TAGS */
+.idea-meta {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+  .innovation-header h1 {
+    font-size: 2rem;
+  }
+
+  .innovation-form {
+    padding: 20px;
+  }
+}

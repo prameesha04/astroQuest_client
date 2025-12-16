@@ -10,11 +10,8 @@ import Contact from "./Pages/Contact";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import QuizZone from "./Quiz/QuizZone";
-import GameZone from "./Game/GameZone";
-import InnovationZone from "./Innovation/InnovationZone";
-
-
-
+import BoardGame from "./Game/BoardGame";
+import InnovationHome from "./Innovation/InnovationHome";
 
 const App = () => {
   return (
@@ -29,8 +26,8 @@ const App = () => {
         <Route path="/signup" element={<Signup />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/quiz" element={<QuizZone />} />
-        <Route path="/game" element={<GameZone />} />
-        <Route path="/innovation" element={<InnovationZone />} />
+        <Route path="/board-game" element={<BoardGame />} />
+        <Route path="/innovation" element={<InnovationHome />} />
       </Routes>
 
       <Footer />

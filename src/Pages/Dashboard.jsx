@@ -16,7 +16,7 @@ const Dashboard = () => {
           <p>Test your cosmic knowledge</p>
         </div>
 
-        <div className="dash-card" onClick={() => navigate("/boardgame")}>
+        <div className="dash-card" onClick={() => navigate("/board-game")}>
           🎮
           <h3 className="text-2xl">Astro Board Quest</h3>
           <p>Play & explore planets</p>
@@ -24,7 +24,7 @@ const Dashboard = () => {
 
         <div className="dash-card" onClick={() => navigate("/innovation")}>
           🌟
-          <h3 className="text-2xl">Daily Challenge</h3>
+          <h3 className="text-2xl">Innovation</h3>
           <p>Earn bonus XP</p>
         </div>
       </div>
