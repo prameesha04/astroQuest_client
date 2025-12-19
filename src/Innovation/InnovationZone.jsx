@@ -10,7 +10,7 @@ const InnovationZone = () => {
 
   return (
     <div>
-      <h2>🌟 Innovation Zone</h2>
+      <h2>Innovation Zone</h2>
       <button onClick={dailyChallenge}>Daily Space Challenge</button>
     </div>
   );

@@ -12,7 +12,7 @@ export default function InnovationList() {
 
   return (
     <div>
-      <h2>📋 Submitted Innovations</h2>
+      <h2>Submitted Innovations</h2>
 
       {list.map((item) => (
         <div key={item._id}>

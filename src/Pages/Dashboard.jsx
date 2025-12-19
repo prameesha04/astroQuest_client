@@ -7,7 +7,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <SpaceBackground />
-      <h1 className="text-6xl">🚀 Conquer Astro Challenge</h1>
+      <h1 className="text-6xl">Conquer Astro Challenge</h1>
 
       <div className="card-container">
         <div className="dash-card" onClick={() => navigate("/quiz")}>

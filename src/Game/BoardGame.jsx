@@ -95,7 +95,7 @@ const BoardGame = () => {
 
   return (
     <GameZone>
-      <h2>🌌 AstroQuest – Educational Board Game</h2>
+      <h2>AstroQuest – Educational Board Game</h2>
       <h3>👉 Turn: {players[turn].name}</h3>
 
       {/* 🎲 Dice Value */}

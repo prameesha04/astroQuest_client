@@ -21,16 +21,19 @@ const Login = () => {
       });
 
       if (res.data) {
+        localStorage.clear();
         // ✅ store token & role
-        localStorage.setItem("token", res.data.token);
+       
         localStorage.setItem("role", res.data.role);
-
+        
         alert("Login successful!");
 
         // ✅ role-based redirect
         if (res.data.role === "admin") {
+          localStorage.setItem("token", res.data.token);
           navigate("/admin/dashboard");
         } else {
+          localStorage.setItem("token", res.data.token);
           navigate("/dashboard"); // existing user dashboard
         }
       }

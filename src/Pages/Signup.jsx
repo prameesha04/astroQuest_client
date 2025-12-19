@@ -24,7 +24,7 @@ const Signup = () => {
 
       if (res.data) {
         alert("Signup successful!");
-        navigate("/dashboard");
+        navigate("/login");
       }
     } catch (error) {
       alert(error.response?.data?.message || "Signup failed");

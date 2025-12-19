@@ -14,7 +14,6 @@ import BoardGame from "./Game/BoardGame";
 import InnovationHome from "./Innovation/InnovationHome";
 import AdminDashboard from "./Admin/AdminDashboard";
 
-
 const App = () => {
   return (
     <Router>

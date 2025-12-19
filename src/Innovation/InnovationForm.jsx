@@ -26,7 +26,7 @@ export default function InnovationForm() {
 
   return (
     <div>
-      <h2>💡 Submit Your Innovation</h2>
+      <h2>Submit Your Innovation</h2>
 
       <input
         placeholder="Innovator Name"
