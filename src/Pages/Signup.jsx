@@ -16,11 +16,14 @@ const Signup = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:5000/signup", {
-        name, // ✅ Correct variable
-        email,
-        password,
-      });
+      const res = await axios.post(
+        "https://astroquest-server.onrender.com/signup",
+        {
+          name, // ✅ Correct variable
+          email,
+          password,
+        }
+      );
 
       if (res.data) {
         alert("Signup successful!");

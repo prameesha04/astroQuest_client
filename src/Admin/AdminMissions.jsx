@@ -14,9 +14,12 @@ export default function AdminMissions() {
   // FETCH ALL MISSIONS
   const fetchMissions = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/admin/missions", {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      const res = await axios.get(
+        "https://astroquest-server.onrender.com/api/admin/missions",
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
       setMissions(res.data);
     } catch (err) {
       console.error("Failed to fetch missions", err);
@@ -32,7 +35,7 @@ export default function AdminMissions() {
     if (!title) return;
     try {
       await axios.post(
-        "http://localhost:5000/api/admin/missions/create",
+        "https://astroquest-server.onrender.com/api/admin/missions/create",
         { title, description },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -48,7 +51,7 @@ export default function AdminMissions() {
   const updateMission = async (id) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/admin/missions/${id}`,
+        `https://astroquest-server.onrender.com/api/admin/missions/${id}`,
         { title, description },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -64,9 +67,12 @@ export default function AdminMissions() {
   // DELETE MISSION
   const deleteMission = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/admin/missions/${id}`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      await axios.delete(
+        `https://astroquest-server.onrender.com/api/admin/missions/${id}`,
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
       fetchMissions();
     } catch (err) {
       console.error("Delete mission failed", err);

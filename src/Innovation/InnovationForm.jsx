@@ -12,7 +12,10 @@ export default function InnovationForm() {
   });
 
   const submitInnovation = async () => {
-    await axios.post("http://localhost:5000/api/innovation/add", form);
+    await axios.post(
+      "https://astroquest-server.onrender.com/api/innovation/add",
+      form
+    );
     alert("Innovation saved!");
     setForm({
       innovatorName: "",

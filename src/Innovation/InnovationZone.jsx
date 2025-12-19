@@ -2,7 +2,7 @@ import axios from "axios";
 
 const InnovationZone = () => {
   const dailyChallenge = async () => {
-    await axios.post("http://localhost:5000/astro/daily", {
+    await axios.post("https://astroquest-server.onrender.com/astro/daily", {
       userId: "USER_ID",
     });
     alert("Daily Challenge Completed!");

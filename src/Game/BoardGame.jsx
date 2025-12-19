@@ -29,10 +29,13 @@ const BoardGame = () => {
   // 🎯 Save winner to MongoDB
   const saveWinnerToDB = async (winnerPlayer) => {
     try {
-      await axios.post("http://localhost:5000/api/board/save-winner", {
-        winner: winnerPlayer.name,
-        players,
-      });
+      await axios.post(
+        "https://astroquest-server.onrender.com/api/board/save-winner",
+        {
+          winner: winnerPlayer.name,
+          players,
+        }
+      );
     } catch (err) {
       console.error("DB Save Error:", err);
     }

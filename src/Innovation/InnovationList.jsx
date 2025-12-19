@@ -6,7 +6,7 @@ export default function InnovationList() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/innovation/all")
+      .get("https://astroquest-server.onrender.com/api/innovation/all")
       .then((res) => setList(res.data));
   }, []);
 

@@ -16,7 +16,7 @@ const QuizZone = () => {
     if (!userId) return;
 
     axios
-      .get(`http://localhost:5000/progress/${userId}`)
+      .get(`https://astroquest-server.onrender.com/progress/${userId}`)
       .then((res) => {
         setUnlocked(res.data.unlockedLevel || 0);
       })
@@ -27,7 +27,7 @@ const QuizZone = () => {
   const saveProgress = (level) => {
     if (!userId) return;
 
-    axios.post("http://localhost:5000/progress/update", {
+    axios.post("https://astroquest-server.onrender.com/progress/update", {
       userId,
       unlockedLevel: level,
     });

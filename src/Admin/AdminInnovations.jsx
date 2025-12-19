@@ -7,7 +7,7 @@ export default function AdminInnovations() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/admin/innovations", {
+      .get("https://astroquest-server.onrender.com/api/admin/innovations", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
